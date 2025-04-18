@@ -1,125 +1,142 @@
-/* styles.css */
-
-/* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f4f8;
-    color: #333;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Navigation Bar */
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  scroll-behavior: smooth;
+}
+
 nav {
-    background-color: #1e40af; /* Blue background */
-    color: white;
-    padding: 16px 0;
+  width: 100%;
+  background-color: #4b0082;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-    font-weight: bold;
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-/* Home Section */
-#home {
-    background-color: #edf2f7;
-    text-align: center;
-    padding: 100px 0;
+nav ul li a:hover {
+  color: #ddd;
 }
 
-#home h1 {
-    font-size: 3rem;
-    color: #1e40af;
+.background {
+ background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
 }
 
-#home p {
-    font-size: 1.25rem;
-    color: #555;
+.title {
+  color: white;
+  background: rgba(128, 0, 128, 0.6);
+  padding: 20px 40px;
+  border-radius: 12px;
+  font-size: 3rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* About Me Section */
-#about {
-    background-color: white;
-    padding: 60px 0;
-    text-align: center;
+.about-section,
+.education-section,
+.skills-section,
+.contact-section {
+  padding: 60px 20px;
+  background-color: white;
+  text-align: center;
 }
 
-#about h2 {
-    font-size: 2.5rem;
-    color: #1e40af;
+.about-section h2,
+.education-section h2,
+.skills-section h2,
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #4b0082;
+  margin-bottom: 20px;
 }
 
-#about p {
-    font-size: 1.125rem;
-    color: #555;
+.about-section p,
+.contact-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #333;
 }
 
-/* Gallery Section */
-#gallery {
-    background-color: #f8fafc;
-    padding: 60px 0;
-    text-align: center;
+.education-entry {
+  margin-bottom: 25px;
 }
 
-#gallery h2 {
-    font-size: 2.5rem;
-    color: #1e40af;
+.education-entry h3 {
+  font-size: 1.5rem;
+  color: #333;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+.education-entry p {
+  font-size: 1.1rem;
+  color: #666;
 }
 
-.grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s;
+.skills-section p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.grid img:hover {
-    transform: scale(1.05);
+.contact-info {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: #555;
 }
 
-/* Contact Section */
-#contact {
-    background-color: white;
-    padding: 60px 0;
-    text-align: center;
+.contact-info p {
+  margin: 5px 0;
 }
 
-#contact h2 {
-    font-size: 2.5rem;
-    color: #1e40af;
-}
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    padding: 15px 30px;
+  }
 
-input, textarea {
-    width: 80%;
-    padding: 12px;
-    margin-bottom: 10px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-}
+  .about-section h2,
+  .education-section h2,
+  .skills-section h2,
+  .contact-section h2 {
+    font-size: 2rem;
+  }
 
-button {
-    background-color: #1e40af;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
+  .about-section p,
+  .education-entry p,
+  .skills-section p,
+  .contact-section p {
+    font-size: 1rem;
+  }
 
-button:hover {
-    background-color: #2563eb;
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
