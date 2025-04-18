@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link href="styles.css" rel="stylesheet"> <!-- Linking to styles.css -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aatmay Gadgil</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <div class="background" id="home">
+    <div class="title">Hello, I am Aatmay Gadgil</div>
+  </div>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h1>Welcome to My Personal Website</h1>
-        <p>Hi, I'm Aatmay Gadgil. I enjoy playing sports and video games. Explore my world!</p>
-    </section>
+  <section class="about-section" id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a first-year Computer Engineering student at FR.CRCE. I possess skills in C, C++, Python, HTML, and CSS. I am eager to expand my knowledge into Data Structures and Algorithms for further development. My hobbies include playing and watching sports, playing video games, and chess. I have an interest in exploring new things related to tech, AI, and even other activities like movies and TV shows.
+      <br><br>
+      I am really excited to grow in my field and contribute by applying the skills I have learned so far. Feel free to connect with me!
+    </p>
+  </section>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm passionate about sports, especially cricket, and love exploring new video games. I enjoy challenging myself and learning new things.</p>
-    </section>
+  <section class="education-section" id="education">
+    <h2>Education</h2>
+    <div class="education-entry">
+      <h3>Thakur Public School</h3>
+      <p>Grade - 94.2%</p>
+    </div>
+    <div class="education-entry">
+      <h3>Prakash College of Commerce and Science</h3>
+      <p>Grade - First Class</p>
+    </div>
+    <div class="education-entry">
+      <h3>FRCRCE</h3>
+      <p>SGPA - 9.45</p>
+    </div>
+  </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="grid">
-            <img src="https://via.placeholder.com/400" alt="Image 1">
-            <img src="https://via.placeholder.com/400" alt="Image 2">
-            <img src="https://via.placeholder.com/400" alt="Image 3">
-        </div>
-    </section>
+  <section class="skills-section" id="skills">
+    <h2>Skills</h2>
+    <p>C • C++ • Python • HTML • CSS • NodeJS • Autocad</p>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
+  <section class="contact-section" id="contact">
+    <h2>Contact</h2>
+    <p>
+      Yeah! Feel free to reach out to me. I am open to discuss related to designing new ideas, building models and making collaboration.
+      <br><br>
+      Coming together is a beginning, keeping together is progress and working together is success.
+    </p>
+    <div class="contact-info">
+      <p><strong>Name:</strong> Aatmay Gadgil</p>
+      <p><strong>Address:</strong> Mumbai, Maharashtra</p>
+      <p><strong>Email:</strong> aatmay.gadgil@gmail.com</p>
+    </div>
+  </section>
 </body>
 </html>
